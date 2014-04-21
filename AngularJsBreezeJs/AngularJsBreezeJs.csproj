@@ -143,7 +143,6 @@
     <Content Include="app\session\sessions.html" />
     <Content Include="app\speaker\speakers.html" />
     <Content Include="app\speaker\speakers.js" />
-    <Content Include="App_Data\.gitignore" />
     <Content Include="App_Data\CodeCamper.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
