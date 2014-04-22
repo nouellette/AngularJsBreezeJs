@@ -12,13 +12,14 @@
         'common.bootstrap', // bootstrap dialog wrapper functions
 
         // 3rd Party Modules
-        'ui.bootstrap',      // ui-bootstrap (ex: carousel, pagination, dialog)
-        'breeze.angular'
+        'breeze.angular',   // configures breeze for an angular app
+        'breeze.directives',// contains the breeze validation directive (zValidate)
+        'ui.bootstrap'      // ui-bootstrap (ex: carousel, pagination, dialog)
     ]);
 
     // Handle routing errors and success events
-    app.run(['breeze', 'routeMediator',
-        function (breeze, routeMediator) {
-            //routeMediator.setRoutingHandlers();
+    app.run(['$route', 'routeMediator',
+        function ($route, routeMediator) {
+            routeMediator.setRoutingHandlers();
     }]);
 })();

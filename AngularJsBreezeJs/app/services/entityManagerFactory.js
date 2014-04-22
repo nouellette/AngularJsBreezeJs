@@ -12,7 +12,6 @@
         new breeze.ValidationOptions({ validateOnAttach: false }).setAsDefault();
         
         var serviceName = config.remoteServiceName;
-        //var metadataStore = new breeze.MetadataStore();
         var metadataStore = createMetadataStore();
 
         var provider = {

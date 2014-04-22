@@ -29,7 +29,7 @@
             logSuccess('Hot Towel Angular loaded!', null, true);
             common.activateController([], controllerId).then(
                 function () {
-
+                    vm.showSplash = false;
                 });
         }
 
